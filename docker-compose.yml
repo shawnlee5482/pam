@@ -1,3 +1,4 @@
+                               
 version: '3.8'
 services:
   php-apache-environment:
@@ -5,6 +6,7 @@ services:
     image: php:8.0-apache
     volumes:
       - ./php/src:/var/www/html/
+    build: .
     ports:
       - 8000:80
   db:
